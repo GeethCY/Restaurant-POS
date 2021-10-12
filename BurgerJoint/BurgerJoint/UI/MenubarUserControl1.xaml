@@ -1,0 +1,70 @@
+﻿<UserControl x:Class="BurgerJoint.UI.MenubarUserControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:BurgerJoint.UI"
+             mc:Ignorable="d" Width="1000" Height="100">
+    <Grid>
+        <Menu x:Name="myMenu" Margin="0,0,194,30">
+            <MenuItem x:Name="Home"  BorderBrush="black" BorderThickness="2" Width="71" Click="Home_Click_1">
+                <MenuItem.Icon>
+                    <Image Source="/Image/iconhome.ico" Margin="-3,-21,-45,-24" VerticalAlignment="Bottom" Height="61"/>
+                </MenuItem.Icon>
+            </MenuItem>
+
+            <MenuItem x:Name="Burger"  Header="  Burger" FontSize="28"  FontFamily="Courgette" FontWeight="Bold" Width="152" Click="Burger_Click_1">
+                <MenuItem.Icon>
+                    <Image Source="/Image/iconburger.ico" Margin="0,-17,-26,-13" RenderTransformOrigin="0.5,0.5">
+                        <Image.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-7.202"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Image.RenderTransform>
+                    </Image>
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem x:Name="Beverage" Header=" Beverages" FontSize="28" FontFamily="Courgette" FontWeight="Bold" Width="184" Click="Beverage_Click_1">
+                <MenuItem.Icon>
+                    <Image Source="/Image/icondrink.ico" Margin="-6,-27,-33,-22" RenderTransformOrigin="0.5,0.5">
+                        <Image.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="10.385"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Image.RenderTransform>
+                    </Image>
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem x:Name="Side" Header="  Sides" FontSize="28" FontFamily="Courgette" FontWeight="Bold" Width="130" Click="Side_Click">
+                <MenuItem.Icon>
+                    <Image Source="/Image/iconsides.ico" Margin="-6,-27,-33,-22" RenderTransformOrigin="0.5,0.5">
+                        <Image.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="10.385"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Image.RenderTransform>
+                    </Image>
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem x:Name="About" Header=" About Us" FontSize="28" FontFamily="Courgette" FontWeight="Bold" Height="70" Width="169" Click="About_Click_1">
+                <MenuItem.Icon>
+                    <Image Source="/Image/iconus.ico" Margin="0,-26,-32,-23" />
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem x:Name="Exit" FontFamily="Courgette" FontWeight="Bold" Click="Exit_Click_1" >
+                <MenuItem.Icon>
+                    <Image Source="/Image/iconexit.ico" Margin="0,-15,-13,-11"/>
+                </MenuItem.Icon>
+            </MenuItem>
+        </Menu>
+    </Grid>
+</UserControl>

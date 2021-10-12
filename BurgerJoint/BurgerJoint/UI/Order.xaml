@@ -1,0 +1,19 @@
+﻿<Page x:Class="BurgerJoint.UI.Order"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BurgerJoint.UI"
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="1600" Background="white"
+      Title="Order">
+
+    <Grid>
+        <local:MenubarUserControl1 Margin="497,-105,326,781" />
+        <Label Content="order" Background="Yellow"  FontSize="100" HorizontalAlignment="Left" Margin="78,80,0,0" VerticalAlignment="Top"/>
+        <Grid>
+            <Button x:Name="payBtn" FontSize="40" Content="Proceed to pay" HorizontalAlignment="Left" Margin="465,354,0,0" VerticalAlignment="Top" Width="354" Height="126" Click="payBtn_Click"/>
+            <TextBlock Background="green" x:Name="dateText" FontSize="50" Margin="411,83,286,554" />
+        </Grid>
+    </Grid>
+</Page>
